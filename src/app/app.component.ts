@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ErrorComponent } from './error/error.component';
+import { ServerComponent } from './server/server.component';
+import { SuccessComponent } from './success/success.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule,ServerComponent,SuccessComponent,ErrorComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
